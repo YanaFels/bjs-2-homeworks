@@ -32,7 +32,8 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
     isNaN(amount) ||
     isNaN(countMonths)
     ) {
-      return console.log('Один из параметров содержит неверное значение');
+       console.log('Один из параметров содержит неверное значение');
+       return false;
     }
 
   percent = (percent / 100) / 12;
